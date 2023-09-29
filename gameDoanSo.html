@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="playGame()">Chơi</button>
+<script>
+
+    function playGame() {
+        var giaTriChon = prompt('Hãy chọn 1 số từ 0 đến 9');
+        var random = Math.floor(Math.random() * 10);
+        alert('random ra số' +random);
+        if (giaTriChon == random){
+            alert('chúc mừng bạn');
+        }else if (giaTriChon < random){
+            alert('số bạn chọn nhỏ hơn kết quả');
+        }else if (giaTriChon > random){
+            alert('số bạn chọn lớn hơn kết quả');
+        }
+    }
+</script>
+</body>
+</html>
